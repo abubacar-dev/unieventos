@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de Inscrição - Conferência Anual de Ciências Marinhas - UniEventos">
+    <title>Inscrição | Conferência Anual de Ciências Marinhas</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="../assets/images/logos/unilurio-logo.png" alt="Logo da Universidade Lúrio" class="header__logo-img">
+                <div class="header__title">
+                    <h1>UniEventos</h1>
+                    <p>Universidade Lúrio</p>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="../index.html" class="header__nav-link">Início</a></li>
+                    <li class="header__nav-item"><a href="lista-eventos.html" class="header__nav-link header__nav-link--active">Eventos</a></li>
+                    <li class="header__nav-item"><a href="../calendario/calendario.html" class="header__nav-link">Calendário</a></li>
+                    <li class="header__nav-item"><a href="../index.html#sobre" class="header__nav-link">Sobre</a></li>
+                    <li class="header__nav-item"><a href="../index.html#contato" class="header__nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="header__menu-btn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-header__title">Inscrição</h1>
+                <p class="page-header__subtitle">Conferência Anual de Ciências Marinhas</p>
+            </div>
+        </section>
+
+        <section class="registration-section">
+            <div class="container">
+                <div class="registration-grid">
+                    <div class="registration-info">
+                        <div class="registration-info__details">
+                            <h2 class="registration-info__title">Informações do Evento</h2>
+                            <div class="registration-info__item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <div>
+                                    <h3>Data</h3>
+                                    <p>15-17 Outubro 2025</p>
+                                </div>
+                            </div>
+                            <div class="registration-info__item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h3>Horário</h3>
+                                    <p>8:30 - 17:00</p>
+                                </div>
+                            </div>
+                            <div class="registration-info__item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h3>Local</h3>
+                                    <p>Auditório Central, Universidade Lúrio</p>
+                                </div>
+                            </div>
+                            <div class="registration-info__item">
+                                <i class="fas fa-user-graduate"></i>
+                                <div>
+                                    <h3>Público-alvo</h3>
+                                    <p>Estudantes, Pesquisadores, Profissionais</p>
+                                </div>
+                            </div>
+                            <div class="registration-info__item">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <div>
+                                    <h3>Taxa de Inscrição</h3>
+                                    <p>Gratuito para estudantes da UniLúrio<br>
+                                    500 MZN para outros participantes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="registration-info__instructions">
+                            <h2 class="registration-info__title">Instruções</h2>
+                            <ul class="registration-info__list">
+                                <li>Preencha todos os campos obrigatórios marcados com *</li>
+                                <li>A confirmação da inscrição será enviada ao seu email</li>
+                                <li>Para dúvidas, entre em contato pelo email: conferencia.marinha@unilurio.ac.mz</li>
+                                <li>A inscrição estará sujeita à disponibilidade de vagas</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="registration-form">
+                        <h2 class="registration-form__title">Formulário de Inscrição</h2>
+                        <form action="#" method="POST" class="form">
+                            <div class="form__section">
+                                <h3 class="form__section-title">Informações Pessoais</h3>
+                                <div class="form__row">
+                                    <div class="form__group">
+                                        <label for="nome" class="form__label">Nome Completo *</label>
+                                        <input type="text" id="nome" name="nome" class="form__input" required>
+                                    </div>
+                                </div>
+                                <div class="form__row form__row--two-cols">
+                                    <div class="form__group">
+                                        <label for="email" class="form__label">Email *</label>
+                                        <input type="email" id="email" name="email" class="form__input" required>
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="telefone" class="form__label">Telefone *</label>
+                                        <input type="tel" id="telefone" name="telefone" class="form__input" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form__section">
+                                <h3 class="form__section-title">Informações Acadêmicas</h3>
+                                <div class="form__row">
+                                    <div class="form__group">
+                                        <label for="vinculo" class="form__label">Vínculo com a Universidade *</label>
+                                        <select id="vinculo" name="vinculo" class="form__select" required>
+                                            <option value="">Selecione uma opção</option>
+                                            <option value="estudante_grad">Estudante de Graduação</option>
+                                            <option value="estudante_pos">Estudante de Pós-Graduação</option>
+                                            <option value="docente">Docente</option>
+                                            <option value="pesquisador">Pesquisador</option>
+                                            <option value="funcionario">Funcionário</option>
+                                            <option value="externo">Externo</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form__row form__row--two-cols">
+                                    <div class="form__group">
+                                        <label for="instituicao" class="form__label">Instituição *</label>
+                                        <input type="text" id="instituicao" name="instituicao" class="form__input" required>
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="curso" class="form__label">Curso/Departamento</label>
+                                        <input type="text" id="curso" name="curso" class="form__input">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form__section">
+                                <h3 class="form__section-title">Informações da Conferência</h3>
+                                <div class="form__row">
+                                    <div class="form__group">
+                                        <label class="form__label">Dias que pretende participar *</label>
+                                        <div class="form__checkbox-group">
+                                            <div class="form__checkbox">
+                                                <input type="checkbox" id="dia1" name="dias[]" value="dia1" class="form__checkbox-input">
+                                                <label for="dia1" class="form__checkbox-label">Dia 1 (15/10/2025)</label>
+                                            </div>
+                                            <div class="form__checkbox">
+                                                <input type="checkbox" id="dia2" name="dias[]" value="dia2" class="form__checkbox-input">
+                                                <label for="dia2" class="form__checkbox-label">Dia 2 (16/10/2025)</label>
+                                            </div>
+                                            <div class="form__checkbox">
+                                                <input type="checkbox" id="dia3" name="dias[]" value="dia3" class="form__checkbox-input">
+                                                <label for="dia3" class="form__checkbox-label">Dia 3 (17/10/2025)</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__row">
+                                    <div class="form__group">
+                                        <label for="areas" class="form__label">Áreas de interesse *</label>
+                                        <select id="areas" name="areas" class="form__select" required>
+                                            <option value="">Selecione uma opção</option>
+                                            <option value="biodiversidade">Biodiversidade Marinha</option>
+                                            <option value="conservacao">Conservação Marinha</option>
+                                            <option value="pesca">Pesca Sustentável</option>
+                                            <option value="mudancas">Mudanças Climáticas e Oceanos</option>
+                                            <option value="recursos">Gestão de Recursos Marinhos</option>
+                                            <option value="outros">Outros</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form__row">
+                                    <div class="form__group">
+                                        <label for="apresentacao" class="form__label">Deseja apresentar trabalho?</label>
+                                        <div class="form__radio-group">
+                                            <div class="form__radio">
+                                                <input type="radio" id="apresentacao_sim" name="apresentacao" value="sim" class="form__radio-input">
+                                                <label for="apresentacao_sim" class="form__radio-label">Sim</label>
+                                            </div>
+                                            <div class="form__radio">
+                                                <input type="radio" id="apresentacao_nao" name="apresentacao" value="nao" class="form__radio-input" checked>
+                                                <label for="apresentacao_nao" class="form__radio-label">Não</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__row form__row--apresentacao">
+                                    <div class="form__group">
+                                        <label for="titulo_trabalho" class="form__label">Título do Trabalho</label>
+                                        <input type="text" id="titulo_trabalho" name="titulo_trabalho" class="form__input">
+                                    </div>
+                                </div>
+                                <div class="form__row form__row--apresentacao">
+                                    <div class="form__group">
+                                        <label for="resumo" class="form__label">Resumo do Trabalho</label>
+                                        <textarea id="resumo" name="resumo" class="form__textarea" rows="5"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form__section">
+                                <h3 class="form__section-title">Informações Adicionais</h3>
+                                <div class="form__row">
+                                    <div class="form__group">
+                                        <label for="conheceu" class="form__label">Como ficou sabendo do evento? *</label>
+                                        <select id="conheceu" name="conheceu" class="form__select" required>
+                                            <option value="">Selecione uma opção</option>
+                                            <option value="website">Website da Universidade</option>
+                                            <option value="email">Email Institucional</option>
+                                            <option value="redes">Redes Sociais</option>
+                                            <option value="colegas">Colegas/Professores</option>
+                                            <option value="cartaz">Cartazes/Panfletos</option>
+                                            <option value="outros">Outros</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form__row">
+                                    <div class="form__group">
+                                        <label for="comentarios" class="form__label">Comentários ou Necessidades Especiais</label>
+                                        <textarea id="comentarios" name="comentarios" class="form__textarea" rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form__row">
+                                <div class="form__checkbox">
+                                    <input type="checkbox" id="termos" name="termos" class="form__checkbox-input" required>
+                                    <label for="termos" class="form__checkbox-label">Concordo com os termos e condições do evento *</label>
+                                </div>
+                            </div>
+
+                            <div class="form__actions">
+                                <button type="submit" class="btn btn--primary btn--lg">Confirmar Inscrição</button>
+                                <button type="reset" class="btn btn--secondary btn--lg">Limpar Formulário</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__info">
+                    <img src="../assets/images/logos/unilurio-logo-white.png" alt="Logo da Universidade Lúrio" class="footer__logo">
+                    <p class="footer__description">UniEventos - Sistema de Gerenciamento de Eventos Acadêmicos da Universidade Lúrio</p>
+                </div>
+
+                <div class="footer__links">
+                    <h3 class="footer__title">Links Rápidos</h3>
+                    <ul class="footer__list">
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="lista-eventos.html">Eventos</a></li>
+                        <li><a href="../calendario/calendario.html">Calendário</a></li>
+                        <li><a href="../index.html#sobre">Sobre</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <h3 class="footer__title">Contato</h3>
+                    <ul class="footer__list">
+                        <li><i class="fas fa-map-marker-alt"></i> Campus Universitário de Marrere, Nampula</li>
+                        <li><i class="fas fa-phone"></i> +258 26 218 250</li>
+                        <li><i class="fas fa-envelope"></i> info@unilurio.ac.mz</li>
+                    </ul>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2025 UniEventos - Universidade Lúrio. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

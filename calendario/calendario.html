@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calendário de Eventos Acadêmicos da Universidade Lúrio - UniEventos">
+    <title>Calendário de Eventos | UniEventos</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="../assets/images/logos/unilurio-logo.png" alt="Logo da Universidade Lúrio" class="header__logo-img">
+                <div class="header__title">
+                    <h1>UniEventos</h1>
+                    <p>Universidade Lúrio</p>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="../index.html" class="header__nav-link">Início</a></li>
+                    <li class="header__nav-item"><a href="../eventos/lista-eventos.html" class="header__nav-link">Eventos</a></li>
+                    <li class="header__nav-item"><a href="calendario.html" class="header__nav-link header__nav-link--active">Calendário</a></li>
+                    <li class="header__nav-item"><a href="../index.html#sobre" class="header__nav-link">Sobre</a></li>
+                    <li class="header__nav-item"><a href="../index.html#contato" class="header__nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="header__menu-btn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-header__title">Calendário de Eventos</h1>
+                <p class="page-header__subtitle">Visualize todos os eventos acadêmicos programados</p>
+            </div>
+        </section>
+
+        <section class="calendar-section">
+            <div class="container">
+                <div class="calendar-navigation">
+                    <div class="calendar-navigation__month">
+                        <button class="calendar-navigation__btn calendar-navigation__btn--prev" aria-label="Mês anterior">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <h2 class="calendar-navigation__title">Outubro 2025</h2>
+                        <button class="calendar-navigation__btn calendar-navigation__btn--next" aria-label="Próximo mês">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="calendar-navigation__view">
+                        <button class="calendar-navigation__view-btn calendar-navigation__view-btn--active">Mês</button>
+                        <button class="calendar-navigation__view-btn">Semana</button>
+                        <button class="calendar-navigation__view-btn">Dia</button>
+                    </div>
+                </div>
+
+                <div class="calendar">
+                    <div class="calendar__header">
+                        <div class="calendar__weekday">Dom</div>
+                        <div class="calendar__weekday">Seg</div>
+                        <div class="calendar__weekday">Ter</div>
+                        <div class="calendar__weekday">Qua</div>
+                        <div class="calendar__weekday">Qui</div>
+                        <div class="calendar__weekday">Sex</div>
+                        <div class="calendar__weekday">Sáb</div>
+                    </div>
+                    <div class="calendar__grid">
+                        <div class="calendar__day calendar__day--disabled">
+                            <span class="calendar__date">29</span>
+                        </div>
+                        <div class="calendar__day calendar__day--disabled">
+                            <span class="calendar__date">30</span>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">1</span>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">2</span>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">3</span>
+                            <div class="calendar__event calendar__event--symposium">
+                                <span class="calendar__event-time">08:30</span>
+                                <span class="calendar__event-title">Simpósio de Engenharia</span>
+                            </div>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">4</span>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">5</span>
+                            <div class="calendar__event calendar__event--lecture">
+                                <span class="calendar__event-time">14:00</span>
+                                <span class="calendar__event-title">Sustentabilidade e Desenvolvimento</span>
+                            </div>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">6</span>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">7</span>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">8</span>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">9</span>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">10</span>
+                            <div class="calendar__event calendar__event--workshop">
+                                <span class="calendar__event-time">09:00</span>
+                                <span class="calendar__event-title">Workshop de Design Thinking</span>
+                            </div>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">11</span>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">12</span>
+                            <div class="calendar__event calendar__event--seminar">
+                                <span class="calendar__event-time">14:00</span>
+                                <span class="calendar__event-title">Seminário de Saúde Pública</span>
+                            </div>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">13</span>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">14</span>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">15</span>
+                            <div class="calendar__event calendar__event--conference calendar__event--multiday">
+                                <span class="calendar__event-time">08:30</span>
+                                <span class="calendar__event-title">Conferência Anual de Ciências Marinhas</span>
+                            </div>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">16</span>
+                            <div class="calendar__event calendar__event--conference calendar__event--multiday">
+                                <span class="calendar__event-time">09:00</span>
+                                <span class="calendar__event-title">Conferência Anual de Ciências Marinhas</span>
+                            </div>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">17</span>
+                            <div class="calendar__event calendar__event--conference calendar__event--multiday">
+                                <span class="calendar__event-time">09:00</span>
+                                <span class="calendar__event-title">Conferência Anual de Ciências Marinhas</span>
+                            </div>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">18</span>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">19</span>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">20</span>
+                            <div class="calendar__event calendar__event--workshop">
+                                <span class="calendar__event-time">09:00</span>
+                                <span class="calendar__event-title">Workshop de Escrita Científica</span>
+                            </div>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">21</span>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">22</span>
+                            <div class="calendar__event calendar__event--workshop">
+                                <span class="calendar__event-time">14:00</span>
+                                <span class="calendar__event-title">Workshop de Inovação Tecnológica</span>
+                            </div>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">23</span>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">24</span>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">25</span>
+                            <div class="calendar__event calendar__event--workshop">
+                                <span class="calendar__event-time">09:00</span>
+                                <span class="calendar__event-title">Workshop de Técnicas de Pesquisa Marinha</span>
+                            </div>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">26</span>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">27</span>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">28</span>
+                            <div class="calendar__event calendar__event--defense">
+                                <span class="calendar__event-time">10:00</span>
+                                <span class="calendar__event-title">Defesa de Tese: Impactos Ambientais</span>
+                            </div>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">29</span>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">30</span>
+                        </div>
+                        <div class="calendar__day">
+                            <span class="calendar__date">31</span>
+                            <div class="calendar__event calendar__event--lecture">
+                                <span class="calendar__event-time">15:00</span>
+                                <span class="calendar__event-title">Palestra: Liderança Acadêmica</span>
+                            </div>
+                        </div>
+                        <div class="calendar__day calendar__day--disabled">
+                            <span class="calendar__date">1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calendar-legend">
+                    <h3 class="calendar-legend__title">Legenda</h3>
+                    <div class="calendar-legend__items">
+                        <div class="calendar-legend__item">
+                            <span class="calendar-legend__color calendar-legend__color--conference"></span>
+                            <span class="calendar-legend__label">Conferência</span>
+                        </div>
+                        <div class="calendar-legend__item">
+                            <span class="calendar-legend__color calendar-legend__color--workshop"></span>
+                            <span class="calendar-legend__label">Workshop</span>
+                        </div>
+                        <div class="calendar-legend__item">
+                            <span class="calendar-legend__color calendar-legend__color--lecture"></span>
+                            <span class="calendar-legend__label">Palestra</span>
+                        </div>
+                        <div class="calendar-legend__item">
+                            <span class="calendar-legend__color calendar-legend__color--seminar"></span>
+                            <span class="calendar-legend__label">Seminário</span>
+                        </div>
+                        <div class="calendar-legend__item">
+                            <span class="calendar-legend__color calendar-legend__color--defense"></span>
+                            <span class="calendar-legend__label">Defesa</span>
+                        </div>
+                        <div class="calendar-legend__item">
+                            <span class="calendar-legend__color calendar-legend__color--symposium"></span>
+                            <span class="calendar-legend__label">Simpósio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="upcoming-events">
+            <div class="container">
+                <h2 class="section-title">Próximos Eventos</h2>
+                <div class="upcoming__list">
+                    <article class="event-item">
+                        <div class="event-item__date">
+                            <span class="event-item__day">03</span>
+                            <span class="event-item__month">Out</span>
+                        </div>
+                        <div class="event-item__content">
+                            <h3 class="event-item__title">Simpósio de Engenharia e Tecnologia</h3>
+                            <p class="event-item__meta"><i class="fas fa-clock"></i> 08:30 - 16:30 | <i class="fas fa-map-marker-alt"></i> Faculdade de Engenharia</p>
+                            <span class="event-item__tag">Simpósio</span>
+                        </div>
+                        <a href="../eventos/detalhes-evento.html" class="event-item__link" aria-label="Ver detalhes do Simpósio de Engenharia e Tecnologia">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="event-item">
+                        <div class="event-item__date">
+                            <span class="event-item__day">05</span>
+                            <span class="event-item__month">Out</span>
+                        </div>
+                        <div class="event-item__content">
+                            <h3 class="event-item__title">Sustentabilidade e Desenvolvimento Local</h3>
+                            <p class="event-item__meta"><i class="fas fa-clock"></i> 14:00 - 16:00 | <i class="fas fa-map-marker-alt"></i> Sala 302B</p>
+                            <span class="event-item__tag">Palestra</span>
+                        </div>
+                        <a href="../eventos/detalhes-evento.html" class="event-item__link" aria-label="Ver detalhes da Palestra sobre Sustentabilidade">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="event-item">
+                        <div class="event-item__date">
+                            <span class="event-item__day">10</span>
+                            <span class="event-item__month">Out</span>
+                        </div>
+                        <div class="event-item__content">
+                            <h3 class="event-item__title">Workshop de Design Thinking</h3>
+                            <p class="event-item__meta"><i class="fas fa-clock"></i> 09:00 - 12:00 | <i class="fas fa-map-marker-alt"></i> Sala de Inovação</p>
+                            <span class="event-item__tag">Workshop</span>
+                        </div>
+                        <a href="../eventos/detalhes-evento.html" class="event-item__link" aria-label="Ver detalhes do Workshop de Design Thinking">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="event-item">
+                        <div class="event-item__date">
+                            <span class="event-item__day">12</span>
+                            <span class="event-item__month">Out</span>
+                        </div>
+                        <div class="event-item__content">
+                            <h3 class="event-item__title">Seminário de Pesquisa em Saúde Pública</h3>
+                            <p class="event-item__meta"><i class="fas fa-clock"></i> 14:00 - 17:00 | <i class="fas fa-map-marker-alt"></i> Faculdade de Ciências da Saúde</p>
+                            <span class="event-item__tag">Seminário</span>
+                        </div>
+                        <a href="../eventos/detalhes-evento.html" class="event-item__link" aria-label="Ver detalhes do Seminário de Pesquisa em Saúde Pública">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="event-item">
+                        <div class="event-item__date">
+                            <span class="event-item__day">15</span>
+                            <span class="event-item__month">Out</span>
+                        </div>
+                        <div class="event-item__content">
+                            <h3 class="event-item__title">Conferência Anual de Ciências Marinhas</h3>
+                            <p class="event-item__meta"><i class="fas fa-clock"></i> 08:30 - 17:00 | <i class="fas fa-map-marker-alt"></i> Auditório Central</p>
+                            <span class="event-item__tag">Conferência</span>
+                        </div>
+                        <a href="../eventos/detalhes-evento.html" class="event-item__link" aria-label="Ver detalhes da Conferência Anual de Ciências Marinhas">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__info">
+                    <img src="../assets/images/logos/unilurio-logo-white.png" alt="Logo da Universidade Lúrio" class="footer__logo">
+                    <p class="footer__description">UniEventos - Sistema de Gerenciamento de Eventos Acadêmicos da Universidade Lúrio</p>
+                </div>
+
+                <div class="footer__links">
+                    <h3 class="footer__title">Links Rápidos</h3>
+                    <ul class="footer__list">
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="../eventos/lista-eventos.html">Eventos</a></li>
+                        <li><a href="calendario.html">Calendário</a></li>
+                        <li><a href="../index.html#sobre">Sobre</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <h3 class="footer__title">Contato</h3>
+                    <ul class="footer__list">
+                        <li><i class="fas fa-map-marker-alt"></i> Campus Universitário de Marrere, Nampula</li>
+                        <li><i class="fas fa-phone"></i> +258 26 218 250</li>
+                        <li><i class="fas fa-envelope"></i> info@unilurio.ac.mz</li>
+                    </ul>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2025 UniEventos - Universidade Lúrio. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
